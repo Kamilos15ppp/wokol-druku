@@ -1,20 +1,21 @@
-$background_100: #0d0d0d;
-$background_200: #121212;
-$background_300: #1e1e1e;
-$background_400: #252525;
-$primary_100: #00a3ff;
-$primary_200: #0088cc;
-$secondary_100: #a033ff;
-$secondary_200: #8a2be2;
-$tertiary_100: #00ff88;
-$tertiary_200: #00e676;
-$glow_light_primary: #ff00ff;
-$glow_light_secondary: #00ffff;
-$glow_light_white: #ffffff;
-$text_100: #eaeaea;
-$text_200: #cccccc;
-$text_300: #888888;
-$text_400: #555555;
-
-$fontSize: 10px;
-$fontFamily: 'Inter', sans-serif;
+:root {
+  --background-100: #0d0d0d;
+  --background-200: #121212;
+  --background-300: #1e1e1e;
+  --background-400: #252525;
+  --primary-100: #00a3ff;
+  --primary-200: #0088cc;
+  --secondary-100: #a033ff;
+  --secondary-200: #8a2be2;
+  --tertiary-100: #00ff88;
+  --tertiary-200: #00e676;
+  --glow-light-primary: #ff00ff;
+  --glow-light-secondary: #00ffff;
+  --glow-light-white: #ffffff;
+  --text-100: #eaeaea;
+  --text-200: #cccccc;
+  --text-300: #888888;
+  --text-400: #555555;
+  --font-size: 10px;
+  --font-family: 'Inter', sans-serif;
+}

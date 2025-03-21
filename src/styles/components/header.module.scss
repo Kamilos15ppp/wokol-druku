@@ -1,0 +1,13 @@
+.header {
+  padding: 0 4rem;
+  font-size: 4.5rem;
+  font-weight: 800;
+  background: linear-gradient(
+    90deg,
+    var(--glow-light-primary),
+    var(--glow-light-secondary)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

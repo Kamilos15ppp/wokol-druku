@@ -1,0 +1,57 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glowLight {
+  @include flex-center;
+  position: relative;
+  height: 50vh;
+  width: 100%;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    background: linear-gradient(
+      var(--glow-light-primary),
+      var(--glow-light-secondary)
+    );
+    box-shadow: inset 0 0 var(--glow-light-white),
+      inset 6rem 0 10rem var(--glow-light-primary),
+      inset -6rem 0 10rem var(--glow-light-secondary),
+      inset 6rem 0 30rem var(--glow-light-primary),
+      inset -6rem 0 30rem var(--glow-light-secondary),
+      0 0 0 var(--glow-light-white), -2rem 0 6rem var(--glow-light-primary),
+      2rem 0 6rem var(--glow-light-secondary);
+    filter: blur(0.8rem);
+    animation: pulsing-moving 15s linear 2s infinite;
+
+    @keyframes pulsing-moving {
+      0% {
+        transform: scale(1) translate(0, 0);
+      }
+      20% {
+        transform: scale(0.95) translate(-3rem, -3rem);
+      }
+      40% {
+        transform: scale(1.05) translate(3rem, 3rem);
+      }
+      50% {
+        transform: scale(1) translate(0, 0);
+      }
+      60% {
+        transform: scale(0.95) translate(3rem, -3rem);
+      }
+      80% {
+        transform: scale(1.05) translate(-3rem, 3rem);
+      }
+      100% {
+        transform: scale(1) translate(0, 0);
+      }
+    }
+  }
+}

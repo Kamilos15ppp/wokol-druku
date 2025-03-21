@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import { inter } from '@/styles/fonts';
+import content from '@/utils/textContent';
 import '../styles/globals.scss';
 
 export const metadata: Metadata = {
-  title: 'Wokół Druku 3D',
-  description: 'Szeroko pojęte drukowanie w technologi 3D',
+  title: content.meta.title,
+  description: content.meta.description,
 };
 
 export default function RootLayout({

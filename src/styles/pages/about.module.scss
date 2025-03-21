@@ -1,0 +1,43 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  position: relative;
+  @include flex-center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--background-100);
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    bottom: calc(50vh - 20rem);
+    right: 0rem;
+    content: '';
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    background: linear-gradient(
+      var(--glow-light-primary),
+      var(--glow-light-secondary)
+    );
+    filter: blur(5rem);
+  }
+
+  .header {
+    padding: 0 4rem;
+    font-size: 4.5rem;
+    font-weight: 800;
+    background: linear-gradient(
+      90deg,
+      var(--glow-light-primary),
+      var(--glow-light-secondary)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

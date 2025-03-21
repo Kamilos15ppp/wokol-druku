@@ -1,0 +1,22 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  @include flex-center;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--background-100);
+  text-align: center;
+
+  .content {
+    @include flex-center;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 2rem;
+    height: 50vh;
+    width: 100%;
+  }
+}

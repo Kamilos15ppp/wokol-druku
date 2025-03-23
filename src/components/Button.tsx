@@ -12,7 +12,7 @@ interface Props {
   idToScroll: string;
 }
 
-export default function Button({ text, duration, delay, idToScroll }: Props) {
+const Button = ({ text, duration, delay, idToScroll }: Props) => {
   return (
     <motion.button
       className={`${styles.button} ${rajdhani.className}`}
@@ -24,4 +24,6 @@ export default function Button({ text, duration, delay, idToScroll }: Props) {
       {text}
     </motion.button>
   );
-}
+};
+
+export default Button;

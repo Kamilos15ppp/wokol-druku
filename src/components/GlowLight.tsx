@@ -3,7 +3,7 @@
 import { motion } from 'motion/react';
 import styles from '@/styles/components/glowLight.module.scss';
 
-export default function GlowLight() {
+const GlowLight = () => {
   return (
     <motion.div
       className={styles.glowLight}
@@ -12,4 +12,6 @@ export default function GlowLight() {
       transition={{ duration: 1, ease: 'anticipate', delay: 1.5 }}
     />
   );
-}
+};
+
+export default GlowLight;

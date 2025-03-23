@@ -7,7 +7,7 @@ interface Props {
   text: string;
 }
 
-export default function Header({ text }: Props) {
+const TextContent = ({ text }: Props) => {
   return (
     <motion.p
       className={styles.text}
@@ -18,4 +18,6 @@ export default function Header({ text }: Props) {
       {text}
     </motion.p>
   );
-}
+};
+
+export default TextContent;

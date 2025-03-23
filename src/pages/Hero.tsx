@@ -6,7 +6,7 @@ import styles from '@/styles/pages/hero.module.scss';
 
 const { header, seeMoreBtn } = content.hero;
 
-export default function Hero() {
+const Hero = () => {
   return (
     <section className={styles.page}>
       <GlowLight />
@@ -16,4 +16,6 @@ export default function Hero() {
       </div>
     </section>
   );
-}
+};
+
+export default Hero;

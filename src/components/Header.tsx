@@ -11,7 +11,7 @@ interface Props {
   fontSize?: string; //using rem
 }
 
-export default function Header({ text, duration, delay, fontSize }: Props) {
+const Header = ({ text, duration, delay, fontSize }: Props) => {
   return (
     <motion.div
       className={`${styles.header} ${rajdhani.className}`}
@@ -24,4 +24,6 @@ export default function Header({ text, duration, delay, fontSize }: Props) {
       {text}
     </motion.div>
   );
-}
+};
+
+export default Header;

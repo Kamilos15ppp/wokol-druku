@@ -1,5 +1,6 @@
 import About from '@/pages/About';
 import Hero from '@/pages/Hero';
+import SocialMedia from '@/pages/SocialMedia';
 import styles from '@/styles/page.module.scss';
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <main className={styles.page}>
       <Hero />
       <About />
+      <SocialMedia />
     </main>
   );
 };

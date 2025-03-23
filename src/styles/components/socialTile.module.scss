@@ -1,0 +1,33 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile {
+  margin-top: 1.5rem;
+  width: 80%;
+  min-height: 6rem;
+
+  .link {
+    @include flex-center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--text-100);
+
+    .icon {
+      @include flex-center;
+      width: 6rem;
+      height: 6rem;
+      font-size: 6rem;
+      color: var(--text-100);
+    }
+
+    .text {
+      font-size: 2.5rem;
+      color: var(--tertiary-200);
+    }
+  }
+}
